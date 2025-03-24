@@ -28,5 +28,13 @@
             "package": "wall-CardListarOrdenes.zip",
             "manifest": "./manifest.json"
         }
+    },
+    "card-CardGestorFinanzas": {
+        "type": "card",
+        "src": {
+            "from": "./Cards/CardGestorFinanzas",
+            "package": "wall-CardGestorFinanzas.zip",
+            "manifest": "./manifest.json"
+        }
     }
 }

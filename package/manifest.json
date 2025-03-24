@@ -2,7 +2,7 @@
 	"sap.package": {
 		"id": "wall.cp_wall",
 		"packageVersion": {
-			"version": "1.0.9",
+			"version": "1.0.11",
 			"upgradeNotification": "all"
 		},
 		"i18n": "i18n/i18n.properties",
@@ -66,6 +66,22 @@
 					}
 				},
 				"baseURL": "artifacts/card-CardListarOrdenes"
+			},
+			{
+				"manifest": {
+					"_version": "1.27.0",
+					"_generator": "cpkg-project-template",
+					"sap.artifact": {
+						"id": "wall.CardGestorFinanzas",
+						"type": "card",
+						"title": "Card Gestor Finanzas",
+						"subTitle": "",
+						"artifactVersion": {
+							"version": "1.0.1"
+						}
+					}
+				},
+				"baseURL": "artifacts/card-CardGestorFinanzas"
 			}
 		],
 		"documentation": {
@@ -97,6 +113,9 @@
 						},
 						{
 							"id": "wall.CardListarOrdenes.app"
+						},
+						{
+							"id": "wall.CardGestorFinanzas.app"
 						}
 					]
 				},
@@ -284,6 +303,84 @@
 							},
 							"vizResources": {
 								"artifactId": "wall.CardListarOrdenes"
+							}
+						}
+					}
+				},
+				"texts": [
+					{
+						"locale": "",
+						"textDictionary": {
+							"description": "Business App Description"
+						}
+					}
+				]
+			},
+			{
+				"_version": "3.2.0",
+				"identification": {
+					"id": "wall.CardGestorFinanzas.app",
+					"title": "Card Gestor Finanzas",
+					"entityType": "businessapp",
+					"description": "{{description}}"
+				},
+				"payload": {
+					"visualizations": {
+						"wall.CardGestorFinanzas.viz": {
+							"vizType": "sap.card",
+							"vizConfig": {
+								"_version": "1.15.0",
+								"sap.app": {
+									"id": "wall.CardGestorFinanzas",
+									"type": "card",
+									"title": "Card Gestor Finanzas",
+									"subTitle": "",
+									"applicationVersion": {
+										"version": "1.0.1"
+									}
+								},
+								"sap.ui": {
+									"technology": "UI5",
+									"deviceTypes": {
+										"desktop": true,
+										"phone": true,
+										"tablet": true
+									},
+									"icons": {
+										"icon": "sap-icon://technical-object"
+									}
+								},
+								"sap.ui5": {
+									"rootView": {
+										"viewName": "wall.CardGestorFinanzas.View",
+										"type": "XML",
+										"async": true,
+										"id": "app"
+									},
+									"dependencies": {
+										"minUI5Version": "1.38",
+										"libs": {
+											"sap.m": {}
+										}
+									},
+									"resources": {
+										"css": [
+											{
+												"uri": "css/style.css"
+											}
+										]
+									}
+								},
+								"sap.card": {
+									"type": "Component",
+									"designtime": "dt/configuration"
+								},
+								"sap.platform.mobilecards": {
+									"compatible": false
+								}
+							},
+							"vizResources": {
+								"artifactId": "wall.CardGestorFinanzas"
 							}
 						}
 					}

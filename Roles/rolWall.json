@@ -18,6 +18,9 @@
             
             {
               "id": "wall.CardListarOrdenes.app"
+            },
+            {
+              "id": "wall.CardGestorFinanzas.app"
             }
         ]
     }

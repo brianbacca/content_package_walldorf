@@ -1,0 +1,2 @@
+sap.ui.define(["sap/m/MessageToast","sap/ui/core/mvc/Controller","sap/ui/model/json/JSONModel"],function(e,a,o){"use strict";var t;var n;return a.extend("wall.CardGestorFinanzas.Card",{onInit:function(){n=this;t=n.getOwnerComponent().oCard;var e=new sap.ui.model.json.JSONModel({path:jQuery.sap.getModulePath("wall.CardGestorFinanzas")});this.getView().setModel(e,"imageModel");var a=n.getView().byId("card")}})});
+//# sourceMappingURL=Card.controller.js.map
