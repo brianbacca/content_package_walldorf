@@ -1,0 +1,302 @@
+{
+	"sap.package": {
+		"id": "wall.cp_wall",
+		"packageVersion": {
+			"version": "1.0.9",
+			"upgradeNotification": "all"
+		},
+		"i18n": "i18n/i18n.properties",
+		"icon": "sap-icon://accept",
+		"title": "Contente package Walldorf",
+		"subTitle": "Contente package Walldorf",
+		"shortTitle": "",
+		"info": "",
+		"description": "",
+		"tags": {
+			"keywords": []
+		},
+		"vendor": {
+			"id": "",
+			"name": "",
+			"url": ""
+		},
+		"products": "",
+		"categories": "",
+		"scope": "external",
+		"license": {
+			"text": "",
+			"url": ""
+		},
+		"homepage": {
+			"text": "",
+			"url": ""
+		},
+		"support": {
+			"url": ""
+		},
+		"contents": [
+			{
+				"manifest": {
+					"_version": "1.27.0",
+					"_generator": "cpkg-project-template",
+					"sap.artifact": {
+						"id": "wall.CardBanner",
+						"type": "card",
+						"title": "Card Banner",
+						"subTitle": "Card Banner",
+						"artifactVersion": {
+							"version": "1.0.8"
+						}
+					}
+				},
+				"baseURL": "artifacts/card-CardBanner"
+			},
+			{
+				"manifest": {
+					"_version": "1.27.0",
+					"_generator": "cpkg-project-template",
+					"sap.artifact": {
+						"id": "wall.CardListarOrdenes",
+						"type": "card",
+						"title": "Card Listar Ordenes",
+						"subTitle": "",
+						"artifactVersion": {
+							"version": "1.0.1"
+						}
+					}
+				},
+				"baseURL": "artifacts/card-CardListarOrdenes"
+			}
+		],
+		"documentation": {
+			"url": ""
+		},
+		"consumption": [],
+		"dependencies": {
+			"products": [],
+			"services": []
+		},
+		"destinations": [],
+		"cdmEntities": [
+			{
+				"_version": "3.2.0",
+				"identification": {
+					"id": "rol_wall",
+					"title": "Rol Walldorf WZ",
+					"entityType": "role"
+				},
+				"payload": {
+					"spaces": [
+						{
+							"id": "6f0e6ea0-0f92-42a1-b2c2-4d5a580e2369"
+						}
+					],
+					"apps": [
+						{
+							"id": "wall.CardBanner.app"
+						},
+						{
+							"id": "wall.CardListarOrdenes.app"
+						}
+					]
+				},
+				"texts": [
+					{
+						"locale": "",
+						"textDictionary": {
+							"description": "Business App Description"
+						}
+					}
+				]
+			},
+			{
+				"_version": "3.1.0",
+				"identification": {
+					"id": "6f0e6ea0-0f92-42a1-b2c2-4d5a580e2369",
+					"title": "Walldorf",
+					"entityType": "space"
+				},
+				"payload": {
+					"contentNodes": []
+				},
+				"texts": [
+					{
+						"locale": "",
+						"textDictionary": {
+							"description": "Business App Description"
+						}
+					}
+				]
+			},
+			{
+				"_version": "3.2.0",
+				"identification": {
+					"id": "wall.CardBanner.app",
+					"title": "Card Banner",
+					"entityType": "businessapp",
+					"description": "{{description}}"
+				},
+				"payload": {
+					"visualizations": {
+						"wall.CardBanner.viz": {
+							"vizType": "sap.card",
+							"vizConfig": {
+								"_version": "1.15.0",
+								"sap.app": {
+									"id": "wall.CardBanner",
+									"type": "card",
+									"title": "Card Banner",
+									"subTitle": "Card Banner",
+									"applicationVersion": {
+										"version": "1.0.8"
+									}
+								},
+								"sap.ui": {
+									"technology": "UI5",
+									"deviceTypes": {
+										"desktop": true,
+										"phone": true,
+										"tablet": true
+									},
+									"icons": {
+										"icon": "sap-icon://technical-object"
+									}
+								},
+								"sap.ui5": {
+									"rootView": {
+										"viewName": "wall.CardBanner.View",
+										"type": "XML",
+										"async": true,
+										"id": "app"
+									},
+									"dependencies": {
+										"minUI5Version": "1.38",
+										"libs": {
+											"sap.m": {}
+										}
+									},
+									"resources": {
+										"css": [
+											{
+												"uri": "css/style.css"
+											}
+										]
+									},
+									"contentDensities": {
+										"compact": true,
+										"cozy": true
+									},
+									"models": {
+										"banners": {
+											"type": "sap.ui.model.json.JSONModel"
+										}
+									}
+								},
+								"sap.card": {
+									"type": "Component",
+									"designtime": "dt/configuration"
+								},
+								"sap.platform.mobilecards": {
+									"compatible": false
+								}
+							},
+							"vizResources": {
+								"artifactId": "wall.CardBanner"
+							}
+						}
+					}
+				},
+				"texts": [
+					{
+						"locale": "",
+						"textDictionary": {
+							"description": "Business App Description"
+						}
+					}
+				]
+			},
+			{
+				"_version": "3.2.0",
+				"identification": {
+					"id": "wall.CardListarOrdenes.app",
+					"title": "Card Listar Ordenes",
+					"entityType": "businessapp",
+					"description": "{{description}}"
+				},
+				"payload": {
+					"visualizations": {
+						"wall.CardListarOrdenes.viz": {
+							"vizType": "sap.card",
+							"vizConfig": {
+								"_version": "1.15.0",
+								"sap.app": {
+									"id": "wall.CardListarOrdenes",
+									"type": "card",
+									"title": "Card Listar Ordenes",
+									"subTitle": "",
+									"applicationVersion": {
+										"version": "1.0.1"
+									}
+								},
+								"sap.ui": {
+									"technology": "UI5",
+									"deviceTypes": {
+										"desktop": true,
+										"phone": true,
+										"tablet": true
+									},
+									"icons": {
+										"icon": "sap-icon://technical-object"
+									}
+								},
+								"sap.ui5": {
+									"rootView": {
+										"viewName": "wall.CardListarOrdenes.View",
+										"type": "XML",
+										"async": true,
+										"id": "app"
+									},
+									"dependencies": {
+										"minUI5Version": "1.38",
+										"libs": {
+											"sap.m": {}
+										}
+									},
+									"resources": {
+										"css": [
+											{
+												"uri": "css/style.css"
+											}
+										]
+									},
+									"contentDensities": {
+										"compact": true,
+										"cozy": true
+									}
+								},
+								"sap.card": {
+									"type": "Component",
+									"designtime": "dt/configuration"
+								},
+								"sap.platform.mobilecards": {
+									"compatible": false
+								}
+							},
+							"vizResources": {
+								"artifactId": "wall.CardListarOrdenes"
+							}
+						}
+					}
+				},
+				"texts": [
+					{
+						"locale": "",
+						"textDictionary": {
+							"description": "Business App Description"
+						}
+					}
+				]
+			}
+		]
+	}
+}

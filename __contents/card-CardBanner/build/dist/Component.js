@@ -1,0 +1,2 @@
+sap.ui.define(["sap/ui/core/UIComponent"],function(n){"use strict";var a=n.extend("wall.CardBanner.Component",{metadata:{manifest:"json"},onCardReady:function(n){this.oCard=n}});return a});
+//# sourceMappingURL=Component.js.map

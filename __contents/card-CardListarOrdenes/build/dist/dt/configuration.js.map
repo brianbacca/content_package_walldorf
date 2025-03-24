@@ -1,0 +1,1 @@
+{"version":3,"file":"configuration.js","names":["sap","ui","define","Designtime","form","items","preview","modes"],"sources":["configuration-dbg.js"],"mappings":"AAGAA,IAAIC,GAAGC,OAAO,CAAC,iCAAkC,SAC7CC,GAEA,aACA,OAAO,WACH,OAAO,IAAIA,EAAW,CAClBC,KAAM,CACFC,MAAO,CACP,GAEJC,QAAS,CACLC,MAAO,aAGnB,CACJ","ignoreList":[]}

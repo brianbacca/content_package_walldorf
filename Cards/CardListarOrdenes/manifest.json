@@ -1,0 +1,51 @@
+{
+	"_version": "1.15.0",
+	"sap.app": {
+		"id": "wall.CardListarOrdenes",
+		"type": "card",
+		"title": "Card Listar Ordenes",
+		"subTitle": "",
+		"applicationVersion": {
+			"version": "1.0.1"
+		}
+	},
+	"sap.ui": {
+		"technology": "UI5",
+        "deviceTypes": {"desktop": true, "phone": true, "tablet": true},
+		"icons": {
+			"icon": "sap-icon://technical-object"
+		}
+	},
+	"sap.ui5": {
+		"rootView": {
+			"viewName": "wall.CardListarOrdenes.View",
+			"type": "XML",
+			"async": true,
+			"id": "app"
+		},
+		"dependencies": {
+			"minUI5Version": "1.38",
+			"libs": {
+				"sap.m": {}
+			}
+		},
+		"resources": {
+			"css": [
+				{
+					"uri": "css/style.css"
+				}
+			]
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		}
+	},
+	"sap.card": {
+		"type": "Component",
+        "designtime": "dt/configuration"
+	},
+    "sap.platform.mobilecards": {
+        "compatible": false
+    }
+}

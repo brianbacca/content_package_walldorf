@@ -1,0 +1,24 @@
+{
+    "_version": "3.2.0",
+    "identification": {
+      "id": "rol_wall",
+      "title": "Rol Walldorf WZ",
+      "entityType": "role"
+    },
+    "payload": {
+    "spaces": [
+        {
+            "id": "6f0e6ea0-0f92-42a1-b2c2-4d5a580e2369"
+        }
+        ],
+        "apps": [
+            {
+              "id": "wall.CardBanner.app"
+            },
+            
+            {
+              "id": "wall.CardListarOrdenes.app"
+            }
+        ]
+    }
+}

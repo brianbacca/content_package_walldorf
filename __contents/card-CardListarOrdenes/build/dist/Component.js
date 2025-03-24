@@ -1,0 +1,2 @@
+sap.ui.define(["sap/ui/core/UIComponent"],function(n){"use strict";var e=n.extend("wall.CardListarOrdenes.Component",{metadata:{manifest:"json"},onCardReady:function(n){this.oCard=n}});return e});
+//# sourceMappingURL=Component.js.map

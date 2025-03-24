@@ -1,0 +1,32 @@
+{
+    "rol-wall": {
+        "type": "role",
+        "src": {
+        "from": "./Roles",
+        "content": "rolWall.json"
+        }
+    },
+    "espacio-wall": {
+        "type": "space",
+        "src": {
+        "from": "./Espacios",
+        "content": "espacioWall.json"
+        }
+    },
+    "card-CardBanner": {
+        "type": "card",
+        "src": {
+            "from": "./Cards/CardBanner",
+            "package": "wall-CardBanner.zip",
+            "manifest": "./manifest.json"
+        }
+    },
+    "card-CardListarOrdenes": {
+        "type": "card",
+        "src": {
+            "from": "./Cards/CardListarOrdenes",
+            "package": "wall-CardListarOrdenes.zip",
+            "manifest": "./manifest.json"
+        }
+    }
+}

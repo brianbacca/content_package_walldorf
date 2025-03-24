@@ -1,0 +1,91 @@
+btnCentrado{
+    display: flex;
+    justify-content: end; /* Alinea el contenido horizontalmente */
+    align-items: end; /* Alinea el contenido verticalmente */
+  }
+
+.textoNoticia{
+  color: #000000;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  margin-top: 8px;
+}
+.container {  
+  position: relative;   
+  text-align: center;   
+  color: white; 
+}
+.text {   
+  position: absolute;   
+  top: 50%;   
+  left: 50%;   
+  transform: translate(-50%, -50%); 
+}
+
+.imgCentrado{
+  display: flex;
+  justify-content: center; /* Alinea el contenido horizontalmente */
+  align-items: center; /* Alinea el contenido verticalmente */
+}
+
+.sapMPanelContent, .sapMPanelBGTransparent{
+  padding: 0px !important;
+}
+
+.overlay {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+
+.textoTituloNoticia {
+  color: #f0eaea;
+  text-shadow: -1px 2px 4px rgba(0, 0, 0, 0.7);
+  font-size: 35px;
+}
+
+.textoNoticia{
+  color: #000000;
+  margin-top: 8px;
+}
+overlay
+.sapMFlexBoxAlignItemsCenter {
+  align-items: normal;
+}
+
+.anchoBoton span.sapMBtnInner.sapMBtnEmphasized, .anchoBoton span.sapMBtnInner.sapMBtnGhost{
+  height: 40px;
+  width: 17em;
+  font-size: 20px;
+  align-items: center;
+} 
+
+
+.bannerHover{
+  transition: all 0.5s ease; 
+  cursor: pointer; 
+}
+.bannerHover:hover {
+  transform: scale(1.007); 
+  cursor: pointer; 
+}
+
+.marginNegativo{
+  margin-bottom: -.3rem !important;
+}
+
+
+.customBannerImage {
+  width: 100% !important;  
+  height: 20rem; 
+  object-fit: cover;
+}
+
+#carouselSample .sapMFlexItem {
+  flex-grow: 1;
+}
+
+#carouselSample .sapMFlexBox {
+  width: 100% !important;
+}
