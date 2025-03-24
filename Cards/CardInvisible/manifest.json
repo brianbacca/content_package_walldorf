@@ -28,14 +28,18 @@
 			"libs": {
 				"sap.m": {}
 			}
+		},
+		"resources": {
+			"css": [
+				{
+					"uri": "css/style.css"
+				}
+			]
 		}
 	},
 	"sap.card": {
 		"type": "Component",
-        "designtime": "dt/configuration",
-		"header": {
-			"title": "Visit our workshop"
-		}
+        "designtime": "dt/configuration"
 	},
     "sap.platform.mobilecards": {
         "compatible": false

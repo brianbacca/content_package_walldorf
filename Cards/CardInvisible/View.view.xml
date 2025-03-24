@@ -4,5 +4,5 @@
           displayBlock="true"
           controllerName="wall.CardInvisible.Card">
 
-    <Image width="100%" src="{images>/Image_1}"></Image>
+    
 </mvc:View>

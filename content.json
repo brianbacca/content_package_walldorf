@@ -36,5 +36,13 @@
             "package": "wall-CardGestorFinanzas.zip",
             "manifest": "./manifest.json"
         }
+    },
+    "card-CardInvisible": {
+        "type": "card",
+        "src": {
+            "from": "./Cards/CardInvisible",
+            "package": "wall-CardInvisible.zip",
+            "manifest": "./manifest.json"
+        }
     }
 }

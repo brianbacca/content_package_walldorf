@@ -1,18 +1,15 @@
 sap.ui.define([
-	"sap/m/MessageToast",
-	"sap/ui/core/mvc/Controller",
-	"sap/ui/model/json/JSONModel"
-], function (MessageToast, Controller, JSONModel) {
+	"sap/ui/core/mvc/Controller"
+], function (Controller) {
 	"use strict";
+	var oCard;
+	var oController;
 
 	return Controller.extend("wall.CardInvisible.Card", {
 		onInit: function () {
-            var cardId = "wall.CardInvisible";
-            cardId = cardId.replace(/\./g,'/');
-			var oImgModel = new JSONModel({
-                Image_1 : sap.ui.require.toUrl(cardId + "/images") + "/Image_1.png"
-            });
-			this.getView().setModel(oImgModel, "images");
+            oController = this;
+            oCard = oController.getOwnerComponent().oCard;
+			oCard.setVisible(false);
 		}
 	});
 });
