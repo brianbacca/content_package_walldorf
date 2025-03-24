@@ -2,7 +2,7 @@
 	"sap.package": {
 		"id": "wall.cp_wall",
 		"packageVersion": {
-			"version": "1.0.12",
+			"version": "1.0.14",
 			"upgradeNotification": "all"
 		},
 		"i18n": "i18n/i18n.properties",

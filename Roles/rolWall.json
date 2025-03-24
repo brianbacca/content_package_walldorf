@@ -24,6 +24,9 @@
             },
             {
               "id": "wall.CardInvisible.app"
+            },
+            {
+              "id": "wall.CardCurvaDemanda.app"
             }
         ]
     }

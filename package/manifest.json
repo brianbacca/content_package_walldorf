@@ -2,7 +2,7 @@
 	"sap.package": {
 		"id": "wall.cp_wall",
 		"packageVersion": {
-			"version": "1.0.12",
+			"version": "1.0.14",
 			"upgradeNotification": "all"
 		},
 		"i18n": "i18n/i18n.properties",
@@ -98,6 +98,22 @@
 					}
 				},
 				"baseURL": "artifacts/card-CardInvisible"
+			},
+			{
+				"manifest": {
+					"_version": "1.27.0",
+					"_generator": "cpkg-project-template",
+					"sap.artifact": {
+						"id": "wall.CardCurvaDemanda",
+						"type": "card",
+						"title": "Curva de demanda",
+						"subTitle": "",
+						"artifactVersion": {
+							"version": "1.0.1"
+						}
+					}
+				},
+				"baseURL": "artifacts/card-CardCurvaDemanda"
 			}
 		],
 		"documentation": {
@@ -135,6 +151,9 @@
 						},
 						{
 							"id": "wall.CardInvisible.app"
+						},
+						{
+							"id": "wall.CardCurvaDemanda.app"
 						}
 					]
 				},
@@ -478,6 +497,93 @@
 							},
 							"vizResources": {
 								"artifactId": "wall.CardInvisible"
+							}
+						}
+					}
+				},
+				"texts": [
+					{
+						"locale": "",
+						"textDictionary": {
+							"description": "Business App Description"
+						}
+					}
+				]
+			},
+			{
+				"_version": "3.2.0",
+				"identification": {
+					"id": "wall.CardCurvaDemanda.app",
+					"title": "Curva de demanda",
+					"entityType": "businessapp",
+					"description": "{{description}}"
+				},
+				"payload": {
+					"visualizations": {
+						"wall.CardCurvaDemanda.viz": {
+							"vizType": "sap.card",
+							"vizConfig": {
+								"_version": "1.15.0",
+								"sap.app": {
+									"id": "wall.CardCurvaDemanda",
+									"type": "card",
+									"title": "Curva de demanda",
+									"subTitle": "",
+									"applicationVersion": {
+										"version": "1.0.1"
+									}
+								},
+								"sap.ui": {
+									"technology": "UI5",
+									"deviceTypes": {
+										"desktop": true,
+										"phone": true,
+										"tablet": true
+									},
+									"icons": {
+										"icon": "sap-icon://technical-object"
+									}
+								},
+								"sap.ui5": {
+									"rootView": {
+										"viewName": "wall.CardCurvaDemanda.View",
+										"type": "XML",
+										"async": true,
+										"id": "app"
+									},
+									"dependencies": {
+										"minUI5Version": "1.38",
+										"libs": {
+											"sap.m": {}
+										}
+									},
+									"resources": {
+										"css": [
+											{
+												"uri": "css/style.css"
+											}
+										]
+									},
+									"contentDensities": {
+										"compact": true,
+										"cozy": true
+									},
+									"models": {
+										"oGrafico": {
+											"type": "sap.ui.model.json.JSONModel"
+										}
+									}
+								},
+								"sap.card": {
+									"type": "Component",
+									"designtime": "dt/configuration"
+								},
+								"sap.platform.mobilecards": {
+									"compatible": false
+								}
+							},
+							"vizResources": {
+								"artifactId": "wall.CardCurvaDemanda"
 							}
 						}
 					}

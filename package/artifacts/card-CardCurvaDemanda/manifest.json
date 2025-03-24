@@ -1,0 +1,13 @@
+{
+	"_version": "1.27.0",
+	"_generator": "cpkg-project-template",
+	"sap.artifact": {
+		"id": "wall.CardCurvaDemanda",
+		"type": "card",
+		"title": "Curva de demanda",
+		"subTitle": "",
+		"artifactVersion": {
+			"version": "1.0.1"
+		}
+	}
+}

@@ -1,0 +1,60 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:viz="sap.viz.ui5.controls"
+    xmlns:grid="sap.ui.layout.cssgrid" xmlns:l="sap.ui.layout"
+    xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds"
+    xmlns:viz.data="sap.viz.ui5.data"
+    xmlns:commons="sap.suite.ui.commons"
+    xmlns:card="sap.f.cards"
+    xmlns:f="sap.f"
+    width="100%"
+    displayBlock="true"
+    controllerName="wall.CardCurvaDemanda.Card">
+
+    <FlexBox id="card" class="card" height="20rem">
+        <VBox width="100%">
+            <HBox>
+
+                <VBox>
+                    <!-- <Title text="CURVA DE DEMANDA - EDENOR" level="H3" titleStyle="H3" class="click titleTileHB4 marginTopSmallMedium sapUiTinyMarginBegin"/> -->
+                </VBox>
+            </HBox>     
+            <FlexBox id="flexBoxGrafico" class="click graficoSinBorde" justifyContent="Center" alignContent="Center" alignItems="Center">
+            <viz:Popover id="idPoTipos"></viz:Popover>  
+                <viz:VizFrame 
+                        id="idVizFrame" 
+                        uiConfig="{applicationSet:'fiori'}" 
+                        vizType="line" 
+                        width="50rem" 
+                        height="20rem" 
+                        class="click graficoSinBorde"
+                            vizProperties="{ 
+                                title: { 
+                                    visible: true, 
+                                    text: 'Curva de Demanda - Edenor' 
+                                }
+                            }">
+
+
+                        <viz:dataset>
+                            <viz.data:FlattenedDataset data="{oGrafico>/}">
+                                <viz.data:dimensions>
+                                    <viz.data:DimensionDefinition name="Hora" value="{oGrafico>hora}" />
+                                    <viz.data:DimensionDefinition name="Dia" value="{oGrafico>dia}" />
+                                </viz.data:dimensions>
+                                <viz.data:measures>
+                                    <viz.data:MeasureDefinition name="Demanda (kW)" value="{oGrafico>demanda}" />
+                                </viz.data:measures>
+                            </viz.data:FlattenedDataset>
+                        </viz:dataset>
+                        
+                        <viz:feeds>
+                            <viz.feeds:FeedItem uid="valueAxis" type="Measure" values="Demanda (kW)" />
+                            <viz.feeds:FeedItem uid="categoryAxis" type="Dimension" values="Hora" />
+                            <viz.feeds:FeedItem uid="color" type="Dimension" values="Dia" />
+                        </viz:feeds>
+                    </viz:VizFrame>
+            </FlexBox> 
+        </VBox>
+    </FlexBox> 
+</mvc:View>

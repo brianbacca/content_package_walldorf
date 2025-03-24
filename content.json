@@ -44,5 +44,13 @@
             "package": "wall-CardInvisible.zip",
             "manifest": "./manifest.json"
         }
+    },
+    "card-CardCurvaDemanda": {
+        "type": "card",
+        "src": {
+            "from": "./Cards/CardCurvaDemanda",
+            "package": "wall-CardCurvaDemanda.zip",
+            "manifest": "./manifest.json"
+        }
     }
 }
