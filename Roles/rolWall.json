@@ -27,6 +27,9 @@
             },
             {
               "id": "wall.CardCurvaDemanda.app"
+            },
+            {
+              "id": "wall.CardMapa.app"
             }
         ]
     }

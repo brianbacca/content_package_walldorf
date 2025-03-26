@@ -7,16 +7,11 @@
 >
     <VBox
         id="card"
-        class="hover-effect-container"
-        justifyContent="Center"
-        alignItems="Center"
-        width="100%"
-        height="165px"
     >
-            <VBox>
+        <VBox>
             <html:div 
                 id="mapaCABA" 
-                style="width: 70%; height: 400px; display: flex; justify-content: center; align-items: center; margin: auto;">
+                style="width: 100%; height: 19rem; display: flex; justify-content: center; align-items: center; margin: auto;">
             </html:div>
         </VBox>
     </VBox>

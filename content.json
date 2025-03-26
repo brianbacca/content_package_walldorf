@@ -52,5 +52,13 @@
             "package": "wall-CardCurvaDemanda.zip",
             "manifest": "./manifest.json"
         }
+    },
+    "card-CardMapa": {
+        "type": "card",
+        "src": {
+            "from": "./Cards/CardMapa",
+            "package": "wall-CardMapa.zip",
+            "manifest": "./manifest.json"
+        }
     }
 }

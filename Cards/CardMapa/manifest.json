@@ -1,12 +1,13 @@
+
 {
-	"_version": "1.15.0",
+	"_version": "1.16.0",
 	"sap.app": {
 		"id": "wall.CardMapa",
 		"type": "card",
 		"title": "Card Mapa",
 		"subTitle": "",
 		"applicationVersion": {
-			"version": "1.0.0"
+			"version": "1.0.7"
 		}
 	},
 	"sap.ui": {
@@ -33,12 +34,16 @@
 			"css": [
 				{
 					"uri": "css/style.css"
-				}
+				},
+				{
+					"uri": "css/leaflet.css"
+				  }
 			],
 			"js": [
 				{
-					"uri": "libs/sweetalert2.all.min.js"
-				}                              
+					"uri": "libs/leaflet.js"
+				}
+	                          
 			]
 		},
 		"contentDensities": {

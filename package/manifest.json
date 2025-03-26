@@ -2,7 +2,7 @@
 	"sap.package": {
 		"id": "wall.cp_wall",
 		"packageVersion": {
-			"version": "1.0.14",
+			"version": "1.0.24",
 			"upgradeNotification": "all"
 		},
 		"i18n": "i18n/i18n.properties",
@@ -114,6 +114,22 @@
 					}
 				},
 				"baseURL": "artifacts/card-CardCurvaDemanda"
+			},
+			{
+				"manifest": {
+					"_version": "1.27.0",
+					"_generator": "cpkg-project-template",
+					"sap.artifact": {
+						"id": "wall.CardMapa",
+						"type": "card",
+						"title": "Card Mapa",
+						"subTitle": "",
+						"artifactVersion": {
+							"version": "1.0.7"
+						}
+					}
+				},
+				"baseURL": "artifacts/card-CardMapa"
 			}
 		],
 		"documentation": {
@@ -154,6 +170,9 @@
 						},
 						{
 							"id": "wall.CardCurvaDemanda.app"
+						},
+						{
+							"id": "wall.CardMapa.app"
 						}
 					]
 				},
@@ -584,6 +603,96 @@
 							},
 							"vizResources": {
 								"artifactId": "wall.CardCurvaDemanda"
+							}
+						}
+					}
+				},
+				"texts": [
+					{
+						"locale": "",
+						"textDictionary": {
+							"description": "Business App Description"
+						}
+					}
+				]
+			},
+			{
+				"_version": "3.2.0",
+				"identification": {
+					"id": "wall.CardMapa.app",
+					"title": "Card Mapa",
+					"entityType": "businessapp",
+					"description": "{{description}}"
+				},
+				"payload": {
+					"visualizations": {
+						"wall.CardMapa.viz": {
+							"vizType": "sap.card",
+							"vizConfig": {
+								"_version": "1.16.0",
+								"sap.app": {
+									"id": "wall.CardMapa",
+									"type": "card",
+									"title": "Card Mapa",
+									"subTitle": "",
+									"applicationVersion": {
+										"version": "1.0.7"
+									}
+								},
+								"sap.ui": {
+									"technology": "UI5",
+									"deviceTypes": {
+										"desktop": true,
+										"phone": true,
+										"tablet": true
+									},
+									"icons": {
+										"icon": "sap-icon://technical-object"
+									}
+								},
+								"sap.ui5": {
+									"rootView": {
+										"viewName": "wall.CardMapa.View",
+										"type": "XML",
+										"async": true,
+										"id": "app"
+									},
+									"dependencies": {
+										"minUI5Version": "1.38",
+										"libs": {
+											"sap.m": {}
+										}
+									},
+									"resources": {
+										"css": [
+											{
+												"uri": "css/style.css"
+											},
+											{
+												"uri": "css/leaflet.css"
+											}
+										],
+										"js": [
+											{
+												"uri": "libs/leaflet.js"
+											}
+										]
+									},
+									"contentDensities": {
+										"compact": true,
+										"cozy": true
+									}
+								},
+								"sap.card": {
+									"type": "Component",
+									"designtime": "dt/configuration"
+								},
+								"sap.platform.mobilecards": {
+									"compatible": false
+								}
+							},
+							"vizResources": {
+								"artifactId": "wall.CardMapa"
 							}
 						}
 					}
