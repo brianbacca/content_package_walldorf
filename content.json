@@ -68,5 +68,13 @@
             "package": "wall-CardGestionBarcos.zip",
             "manifest": "./manifest.json"
         }
+    },
+    "card-CardCalidadYConsumo": {
+        "type": "card",
+        "src": {
+            "from": "./Cards/CardCalidadYConsumo",
+            "package": "wall-CardCalidadYConsumo.zip",
+            "manifest": "./manifest.json"
+        }
     }
 }

@@ -1,0 +1,13 @@
+{
+	"_version": "1.27.0",
+	"_generator": "cpkg-project-template",
+	"sap.artifact": {
+		"id": "wall.CardCalidadYConsumo",
+		"type": "card",
+		"title": "Card Calidad y Consumo de Gas",
+		"subTitle": "",
+		"artifactVersion": {
+			"version": "1.0.0"
+		}
+	}
+}

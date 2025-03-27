@@ -29,7 +29,7 @@
                 class="sapUiSmallMarginBottom titleCard"
             />
             <Label
-                text="Listar Ordenes"
+                text="Gestor Finanzas"
                 design="Bold"
                 class="titleCard"
             />

@@ -16,7 +16,7 @@
             <HBox justifyContent="Center">
                 <Image src="{imageModel>/path}/images/gnl.svg" class="iconColor iconTileDynamicCardHB4" />
                 <VBox>
-                    <Title text="Distribución de Barcos" level="H3" titleStyle="H3" class="click titleTileHB4 marginTopSmallMedium sapUiTinyMarginBegin" />
+                    <Title text="Números de barcos recibidos ({= ${graficos>/total} })" level="H3" titleStyle="H3" class="click titleTileHB4 marginTopSmallMedium sapUiTinyMarginBegin" />
                 </VBox>
             </HBox>
             <FlexBox id="flexBoxGrafico" class="click graficoSinBorde" justifyContent="Center" alignContent="Center" alignItems="Center">

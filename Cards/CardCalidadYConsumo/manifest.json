@@ -1,0 +1,186 @@
+{
+	"_version": "1.14.0",
+	"sap.app": {
+		"id": "wall.CardCalidadYConsumo",
+		"type": "card",
+		"title": "Card Calidad y Consumo de Gas",
+		"subTitle": "",
+		"applicationVersion": {
+			"version": "1.0.0"
+		}
+	},
+	"sap.ui": {
+		"technology": "UI5",
+		"deviceTypes": {"desktop": true, "phone": true, "tablet": true},
+		"icons": {
+			"icon": "sap-icon://line-chart"
+		}
+	},
+	"sap.card": {
+		"type": "Analytical",
+		"designtime": "dt/configuration",
+		"header": {
+			"type": "Numeric",
+			"data": {
+				"json": {
+					"number": "65000",
+					"unit": "m³",
+					"trend": "Down",
+					"state": "Error",
+					"target": {
+						"number": 100000,
+						"unit": "m³"
+					},
+					"deviation": {
+						"number": 34.7
+					},
+					"details": "Enero 2025"
+				}
+			},
+			"title": "Consumo Mensual de Gas",
+			"subTitle": "Calidad y Consumo",
+			"unitOfMeasurement": "m³",
+			"mainIndicator": {
+				"number": "{number}",
+				"unit": "{unit}",
+				"trend": "{trend}",
+				"state": "{state}"
+			},
+			"details": "{details}",
+			"sideIndicators": [
+				{
+					"title": "Objetivo Mensual",
+					"number": "{target/number}",
+					"unit": "{target/unit}"
+				},
+				{
+					"title": "Desviación",
+					"number": "{deviation/number}",
+					"unit": "%"
+				}
+			]
+		},
+		"content": {
+			"chartType": "Line",
+			"legend": {
+				"visible": true,
+				"position": "Bottom",
+				"alignment": "TopLeft"
+			},
+			"plotArea": {
+				"dataLabel": {
+					"visible": true
+				},
+				"categoryAxisText": {
+					"visible": false
+				},
+				"valueAxisText": {
+					"visible": false
+				}
+			},
+			"title": {
+				"text": "Consumo de Gas - Cromatógrafos de Gases",
+				"visible": true,
+				"alignment": "Left"
+			},
+			"measureAxis": "valueAxis",
+			"dimensionAxis": "categoryAxis",
+			"data": {
+				"json": {
+					"list": [
+						{
+							"Mes": "Enero",
+							"ConsumoGas": 431000.22,
+							"CalidadGas": 230000.00,
+							"CalidadGas1": 24800.63,
+							"CalidadGas2": 205199.37,
+							"CalidadGas3": 199999.37,
+							"Objetivo": 500000.00,
+							"Presupuesto": 210000.00
+						},
+						{
+							"Mes": "Febrero",
+							"ConsumoGas": 494000.30,
+							"CalidadGas": 238000.00,
+							"CalidadGas1": 99200.39,
+							"CalidadGas2": 138799.61,
+							"CalidadGas3": 200199.37,
+							"Objetivo": 500000.00,
+							"Presupuesto": 224000.00
+						},
+						{
+							"Mes": "Marzo",
+							"ConsumoGas": 491000.17,
+							"CalidadGas": 221000.00,
+							"CalidadGas1": 70200.54,
+							"CalidadGas2": 150799.46,
+							"CalidadGas3": 80799.46,
+							"Objetivo": 500000.00,
+							"Presupuesto": 238000.00
+						},
+						{
+							"Mes": "Abril",
+							"ConsumoGas": 536000.34,
+							"CalidadGas": 280000.00,
+							"CalidadGas1": 158800.73,
+							"CalidadGas2": 121199.27,
+							"CalidadGas3": 108800.46,
+							"Objetivo": 500000.00,
+							"Presupuesto": 252000.00
+						},
+						{
+							"Mes": "Mayo",
+							"ConsumoGas": 675000.00,
+							"CalidadGas": 230000.00,
+							"CalidadGas1": 140000.91,
+							"CalidadGas2": 89999.09,
+							"CalidadGas3": 100099.09,
+							"Objetivo": 600000.00,
+							"Presupuesto": 266000.00
+						},
+						{
+							"Mes": "Junio",
+							"ConsumoGas": 680000.00,
+							"CalidadGas": 250000.00,
+							"CalidadGas1": 172800.15,
+							"CalidadGas2": 77199.85,
+							"CalidadGas3": 57199.85,
+							"Objetivo": 600000.00,
+							"Presupuesto": 280000.00
+						},
+						{
+							"Mes": "Julio",
+							"ConsumoGas": 659000.14,
+							"CalidadGas": 325000.00,
+							"CalidadGas1": 237200.74,
+							"CalidadGas2": 87799.26,
+							"CalidadGas3": 187799.26,
+							"Objetivo": 600000.00,
+							"Presupuesto": 294000.00
+						}
+					]
+				},
+				"path": "/list"
+			},
+			"dimensions": [
+				{
+					"label": "Mes",
+					"value": "{Mes}"
+				}
+			],
+			"measures": [
+				{
+					"label": "Consumo de Gas",
+					"value": "{ConsumoGas}"
+				},
+				{
+					"label": "Calidad de Gas",
+					"value": "{CalidadGas}"
+				}
+			]
+		}
+	},
+    "sap.platform.mobilecards": {
+        "compatible": false
+    }
+}

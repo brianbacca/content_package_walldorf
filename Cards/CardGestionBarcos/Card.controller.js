@@ -57,8 +57,10 @@ sap.ui.define([
 					{ "origen": "eeuu", "cantidad": 50 },
 					{ "origen": "noruega", "cantidad": 30 },
 					{ "origen": "australia", "cantidad": 40 }
-				]
+				],
+				"total": 320
 			};
+			
 			var oModel = new sap.ui.model.json.JSONModel(oData);
 			this.getView().setModel(oModel, "graficos");
 		

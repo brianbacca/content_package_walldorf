@@ -6,7 +6,7 @@
 		"title": "Card Gestion de Barcos",
 		"subTitle": "",
 		"applicationVersion": {
-			"version": "1.0.6"
+			"version": "1.0.7"
 		}
 	},
 	"sap.ui": {

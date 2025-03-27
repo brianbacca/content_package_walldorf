@@ -2,7 +2,7 @@
 	"sap.package": {
 		"id": "wall.cp_wall",
 		"packageVersion": {
-			"version": "1.0.30",
+			"version": "1.0.32",
 			"upgradeNotification": "all"
 		},
 		"i18n": "i18n/i18n.properties",
@@ -77,7 +77,7 @@
 						"title": "Card Gestor Finanzas",
 						"subTitle": "",
 						"artifactVersion": {
-							"version": "1.0.1"
+							"version": "1.0.2"
 						}
 					}
 				},
@@ -141,11 +141,27 @@
 						"title": "Card Gestion de Barcos",
 						"subTitle": "",
 						"artifactVersion": {
-							"version": "1.0.6"
+							"version": "1.0.7"
 						}
 					}
 				},
 				"baseURL": "artifacts/card-CardGestionBarcos"
+			},
+			{
+				"manifest": {
+					"_version": "1.27.0",
+					"_generator": "cpkg-project-template",
+					"sap.artifact": {
+						"id": "wall.CardCalidadYConsumo",
+						"type": "card",
+						"title": "Card Calidad y Consumo de Gas",
+						"subTitle": "",
+						"artifactVersion": {
+							"version": "1.0.0"
+						}
+					}
+				},
+				"baseURL": "artifacts/card-CardCalidadYConsumo"
 			}
 		],
 		"documentation": {
@@ -192,6 +208,9 @@
 						},
 						{
 							"id": "wall.CardGestionBarcos.app"
+						},
+						{
+							"id": "wall.CardCalidadYConsumo.app"
 						}
 					]
 				},
@@ -412,7 +431,7 @@
 									"title": "Card Gestor Finanzas",
 									"subTitle": "",
 									"applicationVersion": {
-										"version": "1.0.1"
+										"version": "1.0.2"
 									}
 								},
 								"sap.ui": {
@@ -745,7 +764,7 @@
 									"title": "Card Gestion de Barcos",
 									"subTitle": "",
 									"applicationVersion": {
-										"version": "1.0.6"
+										"version": "1.0.7"
 									}
 								},
 								"sap.ui": {
@@ -799,6 +818,223 @@
 							},
 							"vizResources": {
 								"artifactId": "wall.CardGestionBarcos"
+							}
+						}
+					}
+				},
+				"texts": [
+					{
+						"locale": "",
+						"textDictionary": {
+							"description": "Business App Description"
+						}
+					}
+				]
+			},
+			{
+				"_version": "3.2.0",
+				"identification": {
+					"id": "wall.CardCalidadYConsumo.app",
+					"title": "Card Calidad y Consumo de Gas",
+					"entityType": "businessapp",
+					"description": "{{description}}"
+				},
+				"payload": {
+					"visualizations": {
+						"wall.CardCalidadYConsumo.viz": {
+							"vizType": "sap.card",
+							"vizConfig": {
+								"_version": "1.14.0",
+								"sap.app": {
+									"id": "wall.CardCalidadYConsumo",
+									"type": "card",
+									"title": "Card Calidad y Consumo de Gas",
+									"subTitle": "",
+									"applicationVersion": {
+										"version": "1.0.0"
+									}
+								},
+								"sap.ui": {
+									"technology": "UI5",
+									"deviceTypes": {
+										"desktop": true,
+										"phone": true,
+										"tablet": true
+									},
+									"icons": {
+										"icon": "sap-icon://line-chart"
+									}
+								},
+								"sap.card": {
+									"type": "Analytical",
+									"designtime": "dt/configuration",
+									"header": {
+										"type": "Numeric",
+										"data": {
+											"json": {
+												"number": "65000",
+												"unit": "m³",
+												"trend": "Down",
+												"state": "Error",
+												"target": {
+													"number": 100000,
+													"unit": "m³"
+												},
+												"deviation": {
+													"number": 34.7
+												},
+												"details": "Enero 2025"
+											}
+										},
+										"title": "Consumo Mensual de Gas",
+										"subTitle": "Calidad y Consumo",
+										"unitOfMeasurement": "m³",
+										"mainIndicator": {
+											"number": "{number}",
+											"unit": "{unit}",
+											"trend": "{trend}",
+											"state": "{state}"
+										},
+										"details": "{details}",
+										"sideIndicators": [
+											{
+												"title": "Objetivo Mensual",
+												"number": "{target/number}",
+												"unit": "{target/unit}"
+											},
+											{
+												"title": "Desviación",
+												"number": "{deviation/number}",
+												"unit": "%"
+											}
+										]
+									},
+									"content": {
+										"chartType": "Line",
+										"legend": {
+											"visible": true,
+											"position": "Bottom",
+											"alignment": "TopLeft"
+										},
+										"plotArea": {
+											"dataLabel": {
+												"visible": true
+											},
+											"categoryAxisText": {
+												"visible": false
+											},
+											"valueAxisText": {
+												"visible": false
+											}
+										},
+										"title": {
+											"text": "Consumo de Gas - Cromatógrafos de Gases",
+											"visible": true,
+											"alignment": "Left"
+										},
+										"measureAxis": "valueAxis",
+										"dimensionAxis": "categoryAxis",
+										"data": {
+											"json": {
+												"list": [
+													{
+														"Mes": "Enero",
+														"ConsumoGas": 431000.22,
+														"CalidadGas": 230000,
+														"CalidadGas1": 24800.63,
+														"CalidadGas2": 205199.37,
+														"CalidadGas3": 199999.37,
+														"Objetivo": 500000,
+														"Presupuesto": 210000
+													},
+													{
+														"Mes": "Febrero",
+														"ConsumoGas": 494000.3,
+														"CalidadGas": 238000,
+														"CalidadGas1": 99200.39,
+														"CalidadGas2": 138799.61,
+														"CalidadGas3": 200199.37,
+														"Objetivo": 500000,
+														"Presupuesto": 224000
+													},
+													{
+														"Mes": "Marzo",
+														"ConsumoGas": 491000.17,
+														"CalidadGas": 221000,
+														"CalidadGas1": 70200.54,
+														"CalidadGas2": 150799.46,
+														"CalidadGas3": 80799.46,
+														"Objetivo": 500000,
+														"Presupuesto": 238000
+													},
+													{
+														"Mes": "Abril",
+														"ConsumoGas": 536000.34,
+														"CalidadGas": 280000,
+														"CalidadGas1": 158800.73,
+														"CalidadGas2": 121199.27,
+														"CalidadGas3": 108800.46,
+														"Objetivo": 500000,
+														"Presupuesto": 252000
+													},
+													{
+														"Mes": "Mayo",
+														"ConsumoGas": 675000,
+														"CalidadGas": 230000,
+														"CalidadGas1": 140000.91,
+														"CalidadGas2": 89999.09,
+														"CalidadGas3": 100099.09,
+														"Objetivo": 600000,
+														"Presupuesto": 266000
+													},
+													{
+														"Mes": "Junio",
+														"ConsumoGas": 680000,
+														"CalidadGas": 250000,
+														"CalidadGas1": 172800.15,
+														"CalidadGas2": 77199.85,
+														"CalidadGas3": 57199.85,
+														"Objetivo": 600000,
+														"Presupuesto": 280000
+													},
+													{
+														"Mes": "Julio",
+														"ConsumoGas": 659000.14,
+														"CalidadGas": 325000,
+														"CalidadGas1": 237200.74,
+														"CalidadGas2": 87799.26,
+														"CalidadGas3": 187799.26,
+														"Objetivo": 600000,
+														"Presupuesto": 294000
+													}
+												]
+											},
+											"path": "/list"
+										},
+										"dimensions": [
+											{
+												"label": "Mes",
+												"value": "{Mes}"
+											}
+										],
+										"measures": [
+											{
+												"label": "Consumo de Gas",
+												"value": "{ConsumoGas}"
+											},
+											{
+												"label": "Calidad de Gas",
+												"value": "{CalidadGas}"
+											}
+										]
+									}
+								},
+								"sap.platform.mobilecards": {
+									"compatible": false
+								}
+							},
+							"vizResources": {
+								"artifactId": "wall.CardCalidadYConsumo"
 							}
 						}
 					}
