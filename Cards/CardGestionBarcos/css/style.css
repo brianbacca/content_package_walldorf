@@ -1,0 +1,41 @@
+
+.iconTileDynamicCardHB4{
+    width: 2rem !important;
+    height: 2.6rem !important;
+    margin-left: 1rem;
+    filter:  invert(67%) sepia(65%) saturate(3873%) hue-rotate(233deg) brightness(94%) contrast(97%);
+    margin-top: 1rem;
+}
+
+
+.iconColor{
+    color: #785ee4 !important;;
+}
+
+
+
+/* .card, 
+.click{
+    cursor: pointer;
+}
+.card:hover {
+    border: 2px solid #000000; 
+    border-radius: 1rem;
+}
+
+.graficoSinBorde:focus{
+    outline: none !important;
+} */
+
+
+.titleTileHB4{
+    text-align: center !important;
+    cursor: pointer !important;
+    font-weight: bold;
+    color: #785ee4 ;
+    margin-left: 1rem;
+}
+
+.marginTopSmallMedium{
+    margin-top: 1.1rem;
+}

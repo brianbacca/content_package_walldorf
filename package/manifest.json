@@ -2,7 +2,7 @@
 	"sap.package": {
 		"id": "wall.cp_wall",
 		"packageVersion": {
-			"version": "1.0.24",
+			"version": "1.0.30",
 			"upgradeNotification": "all"
 		},
 		"i18n": "i18n/i18n.properties",
@@ -130,6 +130,22 @@
 					}
 				},
 				"baseURL": "artifacts/card-CardMapa"
+			},
+			{
+				"manifest": {
+					"_version": "1.27.0",
+					"_generator": "cpkg-project-template",
+					"sap.artifact": {
+						"id": "wall.CardGestionBarcos",
+						"type": "card",
+						"title": "Card Gestion de Barcos",
+						"subTitle": "",
+						"artifactVersion": {
+							"version": "1.0.6"
+						}
+					}
+				},
+				"baseURL": "artifacts/card-CardGestionBarcos"
 			}
 		],
 		"documentation": {
@@ -173,6 +189,9 @@
 						},
 						{
 							"id": "wall.CardMapa.app"
+						},
+						{
+							"id": "wall.CardGestionBarcos.app"
 						}
 					]
 				},
@@ -693,6 +712,93 @@
 							},
 							"vizResources": {
 								"artifactId": "wall.CardMapa"
+							}
+						}
+					}
+				},
+				"texts": [
+					{
+						"locale": "",
+						"textDictionary": {
+							"description": "Business App Description"
+						}
+					}
+				]
+			},
+			{
+				"_version": "3.2.0",
+				"identification": {
+					"id": "wall.CardGestionBarcos.app",
+					"title": "Card Gestion de Barcos",
+					"entityType": "businessapp",
+					"description": "{{description}}"
+				},
+				"payload": {
+					"visualizations": {
+						"wall.CardGestionBarcos.viz": {
+							"vizType": "sap.card",
+							"vizConfig": {
+								"_version": "1.15.0",
+								"sap.app": {
+									"id": "wall.CardGestionBarcos",
+									"type": "card",
+									"title": "Card Gestion de Barcos",
+									"subTitle": "",
+									"applicationVersion": {
+										"version": "1.0.6"
+									}
+								},
+								"sap.ui": {
+									"technology": "UI5",
+									"deviceTypes": {
+										"desktop": true,
+										"phone": true,
+										"tablet": true
+									},
+									"icons": {
+										"icon": "sap-icon://technical-object"
+									}
+								},
+								"sap.ui5": {
+									"rootView": {
+										"viewName": "wall.CardGestionBarcos.View",
+										"type": "XML",
+										"async": true,
+										"id": "app"
+									},
+									"dependencies": {
+										"minUI5Version": "1.38",
+										"libs": {
+											"sap.m": {}
+										}
+									},
+									"resources": {
+										"css": [
+											{
+												"uri": "css/style.css"
+											}
+										]
+									},
+									"contentDensities": {
+										"compact": true,
+										"cozy": true
+									},
+									"models": {
+										"graficos": {
+											"type": "sap.ui.model.json.JSONModel"
+										}
+									}
+								},
+								"sap.card": {
+									"type": "Component",
+									"designtime": "dt/configuration"
+								},
+								"sap.platform.mobilecards": {
+									"compatible": false
+								}
+							},
+							"vizResources": {
+								"artifactId": "wall.CardGestionBarcos"
 							}
 						}
 					}

@@ -30,6 +30,9 @@
             },
             {
               "id": "wall.CardMapa.app"
+            },
+            {
+              "id": "wall.CardGestionBarcos.app"
             }
         ]
     }

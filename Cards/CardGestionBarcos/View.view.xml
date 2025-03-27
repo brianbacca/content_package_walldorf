@@ -1,0 +1,90 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:viz="sap.viz.ui5.controls"
+    xmlns:grid="sap.ui.layout.cssgrid" xmlns:l="sap.ui.layout"
+    xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds"
+    xmlns:viz.data="sap.viz.ui5.data"
+    xmlns:commons="sap.suite.ui.commons"
+    xmlns:card="sap.f.cards"
+    xmlns:f="sap.f"
+    width="100%"
+    displayBlock="true"
+    controllerName="wall.CardGestionBarcos.Card">
+
+    <FlexBox id="card" class="card" height="18rem">
+        <VBox width="100%">
+            <HBox justifyContent="Center">
+                <Image src="{imageModel>/path}/images/gnl.svg" class="iconColor iconTileDynamicCardHB4" />
+                <VBox>
+                    <Title text="Distribución de Barcos" level="H3" titleStyle="H3" class="click titleTileHB4 marginTopSmallMedium sapUiTinyMarginBegin" />
+                </VBox>
+            </HBox>
+            <FlexBox id="flexBoxGrafico" class="click graficoSinBorde" justifyContent="Center" alignContent="Center" alignItems="Center">
+              <viz:Popover id="idPoBarcos"></viz:Popover>  
+      <viz:VizFrame height="16em" width="20rem" class="click graficoSinBorde" id="idDonutChart" vizType="donut"
+    vizProperties="{
+        plotArea: {
+            drawingEffect: 'normal',
+            visible: 'true',
+            dataLabel: {
+                visible: 'true',
+                showTotal: 'true',
+                type: 'value'
+            },
+            dataPointStyle: {
+                rules: [
+                    {
+                        dataContext: { origen: 'argentina' },
+                        properties: { color: '#2BAAE2' },
+                        displayName: 'Argentina'
+                    },
+                    {
+                        dataContext: { origen: 'qatar' },
+                        properties: { color: '#78E47F' },
+                        displayName: 'Qatar'
+                    },
+                    {
+                        dataContext: { origen: 'eeuu' },
+                        properties: { color: '	#FF7A59' },
+                        displayName: 'EE. UU.'
+                    },
+                    {
+                        dataContext: { origen: 'noruega' },
+                        properties: { color: '#E04B65' },
+                        displayName: 'Noruega'
+                    },
+                    {
+                        dataContext: { origen: 'australia' },
+                        properties: { color: '#FFD666' },
+                        displayName: 'Australia'
+                    }
+                ]
+            }
+        },
+        interaction: { noninteractiveMode: false },
+        title: { text: 'Distribución de barcos', visible: false },
+        dataLabel: { visible: true },
+        legendGroup: {
+            layout: { alignment: 'center', position: 'right' }
+        },
+        legend: { showFullLabel: 'true', visible: 'true' }
+    }">
+                                <viz:dataset>
+                        <viz.data:FlattenedDataset data="{graficos>/origen}" id="dataSet">
+                            <viz.data:dimensions>
+                                <viz.data:DimensionDefinition name="origen" value="{origen}" />
+                            </viz.data:dimensions>
+                            <viz.data:measures>
+                                <viz.data:MeasureDefinition name="cantidad" value="{cantidad}" />
+                            </viz.data:measures>
+                        </viz.data:FlattenedDataset>
+                    </viz:dataset>
+                    <viz:feeds>
+                        <viz.feeds:FeedItem uid="size" type="Measure" values="cantidad" />
+                        <viz.feeds:FeedItem uid="color" type="Dimension" values="origen" />
+                    </viz:feeds>
+                </viz:VizFrame>
+            </FlexBox>
+        </VBox>
+    </FlexBox>
+</mvc:View>

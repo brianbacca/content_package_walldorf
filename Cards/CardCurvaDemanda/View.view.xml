@@ -28,13 +28,12 @@
                         width="50rem" 
                         height="20rem" 
                         class="click graficoSinBorde"
-                            vizProperties="{ 
-                                title: { 
-                                    visible: true, 
-                                    text: 'Curva de Demanda - Edenor' 
+                            vizProperties="{
+                                title: {
+                                    visible: true,
+                                    text: 'Curva de Demanda - Edenor'
                                 }
                             }">
-
 
                         <viz:dataset>
                             <viz.data:FlattenedDataset data="{oGrafico>/}">

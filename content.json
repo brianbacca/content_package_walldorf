@@ -60,5 +60,13 @@
             "package": "wall-CardMapa.zip",
             "manifest": "./manifest.json"
         }
+    },
+    "card-CardGestionBarcos": {
+        "type": "card",
+        "src": {
+            "from": "./Cards/CardGestionBarcos",
+            "package": "wall-CardGestionBarcos.zip",
+            "manifest": "./manifest.json"
+        }
     }
 }
