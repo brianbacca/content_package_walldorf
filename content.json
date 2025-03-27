@@ -76,5 +76,21 @@
             "package": "wall-CardCalidadYConsumo.zip",
             "manifest": "./manifest.json"
         }
+    },
+    "card-CardPeticionesOfertas": {
+        "type": "card",
+        "src": {
+            "from": "./Cards/CardPeticionesOfertas",
+            "package": "wall-CardPeticionesOfertas.zip",
+            "manifest": "./manifest.json"
+        }
+    },
+    "card-CardConsultasyReclamos": {
+        "type": "card",
+        "src": {
+            "from": "./Cards/CardConsultasyReclamos",
+            "package": "wall-CardConsultasyReclamos.zip",
+            "manifest": "./manifest.json"
+        }
     }
 }

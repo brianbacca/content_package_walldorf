@@ -36,6 +36,12 @@
             },
             {
               "id": "wall.CardCalidadYConsumo.app"
+            },
+            {
+              "id": "wall.CardPeticionesOfertas.app"
+            },
+            {
+              "id": "wall.CardConsultasyReclamos.app"
             }
         ]
     }

@@ -1,0 +1,51 @@
+<mvc:View
+    xmlns:core="sap.ui.core"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    width="100%"
+    height="155px"
+    controllerName="wall.CardConsultasyReclamos.Card"
+>
+    <VBox
+        id="card"
+        class="hover-effect-container"
+        justifyContent="Center"
+        alignItems="Center"
+        width="100%"
+        height="165px"
+    >
+        <VBox
+            id="cardContent"
+            class="card-content"
+            justifyContent="Center"
+            alignItems="Center"
+            width="100%"
+            height="100%"
+        >
+            <core:Icon
+                src="sap-icon://customer-briefing"
+                size="50px"
+                class="sapUiSmallMarginBottom titleCard"
+            />
+            <Label
+                text="Consultas y Reclamos"
+                design="Bold"
+                class="titleCard"
+            />
+        </VBox>
+        <VBox
+            id="cardDescription"
+            class="card-description"
+            justifyContent="Center"
+            alignItems="Center"
+            width="100%"
+            height="100%"
+        >
+            <Label
+                text="Gestiona y sigue tus consultas y reclamos"
+                class="sapUiSmallMarginBottom textDescription"
+            />
+        </VBox>
+    </VBox>
+</mvc:View>

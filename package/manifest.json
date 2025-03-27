@@ -2,7 +2,7 @@
 	"sap.package": {
 		"id": "wall.cp_wall",
 		"packageVersion": {
-			"version": "1.0.32",
+			"version": "1.0.35",
 			"upgradeNotification": "all"
 		},
 		"i18n": "i18n/i18n.properties",
@@ -162,6 +162,38 @@
 					}
 				},
 				"baseURL": "artifacts/card-CardCalidadYConsumo"
+			},
+			{
+				"manifest": {
+					"_version": "1.27.0",
+					"_generator": "cpkg-project-template",
+					"sap.artifact": {
+						"id": "wall.CardPeticionesOfertas",
+						"type": "card",
+						"title": "Card Peticiones de oferta",
+						"subTitle": "",
+						"artifactVersion": {
+							"version": "1.0.1"
+						}
+					}
+				},
+				"baseURL": "artifacts/card-CardPeticionesOfertas"
+			},
+			{
+				"manifest": {
+					"_version": "1.27.0",
+					"_generator": "cpkg-project-template",
+					"sap.artifact": {
+						"id": "wall.CardConsultasyReclamos",
+						"type": "card",
+						"title": "Card Consultas y Reclamos",
+						"subTitle": "",
+						"artifactVersion": {
+							"version": "1.0.0"
+						}
+					}
+				},
+				"baseURL": "artifacts/card-CardConsultasyReclamos"
 			}
 		],
 		"documentation": {
@@ -211,6 +243,12 @@
 						},
 						{
 							"id": "wall.CardCalidadYConsumo.app"
+						},
+						{
+							"id": "wall.CardPeticionesOfertas.app"
+						},
+						{
+							"id": "wall.CardConsultasyReclamos.app"
 						}
 					]
 				},
@@ -1035,6 +1073,162 @@
 							},
 							"vizResources": {
 								"artifactId": "wall.CardCalidadYConsumo"
+							}
+						}
+					}
+				},
+				"texts": [
+					{
+						"locale": "",
+						"textDictionary": {
+							"description": "Business App Description"
+						}
+					}
+				]
+			},
+			{
+				"_version": "3.2.0",
+				"identification": {
+					"id": "wall.CardPeticionesOfertas.app",
+					"title": "Card Peticiones de oferta",
+					"entityType": "businessapp",
+					"description": "{{description}}"
+				},
+				"payload": {
+					"visualizations": {
+						"wall.CardPeticionesOfertas.viz": {
+							"vizType": "sap.card",
+							"vizConfig": {
+								"_version": "1.15.0",
+								"sap.app": {
+									"id": "wall.CardPeticionesOfertas",
+									"type": "card",
+									"title": "Card Peticiones de oferta",
+									"subTitle": "",
+									"applicationVersion": {
+										"version": "1.0.1"
+									}
+								},
+								"sap.ui": {
+									"technology": "UI5",
+									"deviceTypes": {
+										"desktop": true,
+										"phone": true,
+										"tablet": true
+									},
+									"icons": {
+										"icon": "sap-icon://technical-object"
+									}
+								},
+								"sap.ui5": {
+									"rootView": {
+										"viewName": "wall.CardPeticionesOfertas.View",
+										"type": "XML",
+										"async": true,
+										"id": "app"
+									},
+									"dependencies": {
+										"minUI5Version": "1.38",
+										"libs": {
+											"sap.m": {}
+										}
+									},
+									"resources": {
+										"css": [
+											{
+												"uri": "css/style.css"
+											}
+										]
+									}
+								},
+								"sap.card": {
+									"type": "Component",
+									"designtime": "dt/configuration"
+								},
+								"sap.platform.mobilecards": {
+									"compatible": false
+								}
+							},
+							"vizResources": {
+								"artifactId": "wall.CardPeticionesOfertas"
+							}
+						}
+					}
+				},
+				"texts": [
+					{
+						"locale": "",
+						"textDictionary": {
+							"description": "Business App Description"
+						}
+					}
+				]
+			},
+			{
+				"_version": "3.2.0",
+				"identification": {
+					"id": "wall.CardConsultasyReclamos.app",
+					"title": "Card Consultas y Reclamos",
+					"entityType": "businessapp",
+					"description": "{{description}}"
+				},
+				"payload": {
+					"visualizations": {
+						"wall.CardConsultasyReclamos.viz": {
+							"vizType": "sap.card",
+							"vizConfig": {
+								"_version": "1.15.0",
+								"sap.app": {
+									"id": "wall.CardConsultasyReclamos",
+									"type": "card",
+									"title": "Card Consultas y Reclamos",
+									"subTitle": "",
+									"applicationVersion": {
+										"version": "1.0.0"
+									}
+								},
+								"sap.ui": {
+									"technology": "UI5",
+									"deviceTypes": {
+										"desktop": true,
+										"phone": true,
+										"tablet": true
+									},
+									"icons": {
+										"icon": "sap-icon://technical-object"
+									}
+								},
+								"sap.ui5": {
+									"rootView": {
+										"viewName": "wall.CardConsultasyReclamos.View",
+										"type": "XML",
+										"async": true,
+										"id": "app"
+									},
+									"dependencies": {
+										"minUI5Version": "1.38",
+										"libs": {
+											"sap.m": {}
+										}
+									},
+									"resources": {
+										"css": [
+											{
+												"uri": "css/style.css"
+											}
+										]
+									}
+								},
+								"sap.card": {
+									"type": "Component",
+									"designtime": "dt/configuration"
+								},
+								"sap.platform.mobilecards": {
+									"compatible": false
+								}
+							},
+							"vizResources": {
+								"artifactId": "wall.CardConsultasyReclamos"
 							}
 						}
 					}
