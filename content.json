@@ -13,6 +13,13 @@
         "content": "espacioWall.json"
         }
     },
+    "espacio-demo": {
+        "type": "space",
+        "src": {
+        "from": "./Espacios",
+        "content": "espacioDemo.json"
+        }
+    },
     "card-CardBanner": {
         "type": "card",
         "src": {

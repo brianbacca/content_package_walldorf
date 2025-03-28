@@ -1,0 +1,11 @@
+{
+    "_version": "3.1.0",
+    "identification": {
+      "id": "1daf7442-ce29-46dc-b628-0f7c3609781f",
+      "title": "Demo",
+      "entityType": "space"
+    },
+    "payload": {
+      "contentNodes": []
+    }
+}

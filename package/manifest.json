@@ -2,7 +2,7 @@
 	"sap.package": {
 		"id": "wall.cp_wall",
 		"packageVersion": {
-			"version": "1.0.35",
+			"version": "1.0.37",
 			"upgradeNotification": "all"
 		},
 		"i18n": "i18n/i18n.properties",
@@ -217,6 +217,9 @@
 					"spaces": [
 						{
 							"id": "6f0e6ea0-0f92-42a1-b2c2-4d5a580e2369"
+						},
+						{
+							"id": "1daf7442-ce29-46dc-b628-0f7c3609781f"
 						}
 					],
 					"apps": [
@@ -266,6 +269,25 @@
 				"identification": {
 					"id": "6f0e6ea0-0f92-42a1-b2c2-4d5a580e2369",
 					"title": "Walldorf",
+					"entityType": "space"
+				},
+				"payload": {
+					"contentNodes": []
+				},
+				"texts": [
+					{
+						"locale": "",
+						"textDictionary": {
+							"description": "Business App Description"
+						}
+					}
+				]
+			},
+			{
+				"_version": "3.1.0",
+				"identification": {
+					"id": "1daf7442-ce29-46dc-b628-0f7c3609781f",
+					"title": "Demo",
 					"entityType": "space"
 				},
 				"payload": {
