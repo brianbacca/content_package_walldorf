@@ -1,0 +1,38 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+          xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml"
+		  xmlns:grid="sap.ui.layout.cssgrid" xmlns:l="sap.ui.layout"
+          width="100%"
+          displayBlock="true"
+          controllerName="wall.CardCarruselCifrasDestacadas.Card">
+<FlexBox id="card"  class="card" height="20rem">
+    <VBox class="click">
+        <HBox justifyContent="Center">
+            <Title text="Cifras destacadas 2023" level="H3" titleStyle="H3" class="click marginTopSmallMedium titleTileHB4" />
+        </HBox>
+
+      
+            <HBox class="sapUiSmallMarginTop centrarContenido" justifyContent="SpaceBetween">
+                                <VBox class="vboxCentrado">
+                                    <Image src="{imageModel>/path}/images/Izq-1.svg" class="iconoCentrado"/>
+                                    <Text text="GNL descargado" wrapping="true" class="textoModi2"/>
+                                    <Text text="3,41" class="textoNegrita" />
+                                    <Text text="MILLONES m³" wrapping="true" class="textoModi1"/>
+                                </VBox>
+
+                                <VBox class="vboxCentrado">
+                                    <Image src="{imageModel>/path}/images/cifra2.svg" class="iconoCentrado"/>
+                                    <Text text="El gas natural representó" wrapping="true"  class="textoModi2"/>
+                                    <Text text="18%" class="textoNegrita"/>
+                                    <Text text="de la electricidad total producida en el Sistema Eléctrico Nacional" wrapping="true" class="textoModi1"/>
+                                </VBox>
+
+                                <VBox class="vboxCentrado">
+                                    <Image src="{imageModel>/path}/images/der-1.svg" class="iconoCentrado"/>
+                                    <Text text="Nuestras emisiones representan" wrapping="true"  class="textoModi2"/>
+                                    <Text text="menos del 0,3%" class="textoNegrita"/>
+                                    <Text text="del total emitido por las demás fuentes presentes en la bahía de Quintero" class="textoModi1"/>
+                                </VBox>
+                </HBox>
+    </VBox>
+</FlexBox>
+</mvc:View>

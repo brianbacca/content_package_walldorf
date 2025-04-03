@@ -52,13 +52,13 @@ sap.ui.define([
 		
 			var oData = {
 				"origen": [
-					{ "origen": "argentina", "cantidad": 120 },
-					{ "origen": "qatar", "cantidad": 80 },
-					{ "origen": "eeuu", "cantidad": 50 },
-					{ "origen": "noruega", "cantidad": 30 },
-					{ "origen": "australia", "cantidad": 40 }
+					{ "origen": "argentina", "cantidad": 10 },
+					{ "origen": "qatar", "cantidad": 5 },
+					{ "origen": "eeuu", "cantidad": 4 },
+					{ "origen": "noruega", "cantidad": 3 },
+					{ "origen": "australia", "cantidad": 5 }
 				],
-				"total": 320
+				"total": 27
 			};
 			
 			var oModel = new sap.ui.model.json.JSONModel(oData);

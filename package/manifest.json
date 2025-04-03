@@ -2,7 +2,7 @@
 	"sap.package": {
 		"id": "wall.cp_wall",
 		"packageVersion": {
-			"version": "1.0.37",
+			"version": "1.0.48",
 			"upgradeNotification": "all"
 		},
 		"i18n": "i18n/i18n.properties",
@@ -141,7 +141,7 @@
 						"title": "Card Gestion de Barcos",
 						"subTitle": "",
 						"artifactVersion": {
-							"version": "1.0.7"
+							"version": "1.0.8"
 						}
 					}
 				},
@@ -194,6 +194,22 @@
 					}
 				},
 				"baseURL": "artifacts/card-CardConsultasyReclamos"
+			},
+			{
+				"manifest": {
+					"_version": "1.27.0",
+					"_generator": "cpkg-project-template",
+					"sap.artifact": {
+						"id": "wall.CardCarruselCifrasDestacadas",
+						"type": "card",
+						"title": "Card Carrusel Cifras Destacadas",
+						"subTitle": "",
+						"artifactVersion": {
+							"version": "1.0.10"
+						}
+					}
+				},
+				"baseURL": "artifacts/card-CardCarruselCifrasDestacadas"
 			}
 		],
 		"documentation": {
@@ -252,6 +268,9 @@
 						},
 						{
 							"id": "wall.CardConsultasyReclamos.app"
+						},
+						{
+							"id": "wall.CardCarruselCifrasDestacadas.app"
 						}
 					]
 				},
@@ -824,7 +843,7 @@
 									"title": "Card Gestion de Barcos",
 									"subTitle": "",
 									"applicationVersion": {
-										"version": "1.0.7"
+										"version": "1.0.8"
 									}
 								},
 								"sap.ui": {
@@ -1251,6 +1270,84 @@
 							},
 							"vizResources": {
 								"artifactId": "wall.CardConsultasyReclamos"
+							}
+						}
+					}
+				},
+				"texts": [
+					{
+						"locale": "",
+						"textDictionary": {
+							"description": "Business App Description"
+						}
+					}
+				]
+			},
+			{
+				"_version": "3.2.0",
+				"identification": {
+					"id": "wall.CardCarruselCifrasDestacadas.app",
+					"title": "Card Carrusel Cifras Destacadas",
+					"entityType": "businessapp",
+					"description": "{{description}}"
+				},
+				"payload": {
+					"visualizations": {
+						"wall.CardCarruselCifrasDestacadas.viz": {
+							"vizType": "sap.card",
+							"vizConfig": {
+								"_version": "1.15.0",
+								"sap.app": {
+									"id": "wall.CardCarruselCifrasDestacadas",
+									"type": "card",
+									"title": "Card Carrusel Cifras Destacadas",
+									"subTitle": "",
+									"applicationVersion": {
+										"version": "1.0.10"
+									}
+								},
+								"sap.ui": {
+									"technology": "UI5",
+									"deviceTypes": {
+										"desktop": true,
+										"phone": true,
+										"tablet": true
+									},
+									"icons": {
+										"icon": "sap-icon://technical-object"
+									}
+								},
+								"sap.ui5": {
+									"rootView": {
+										"viewName": "wall.CardCarruselCifrasDestacadas.View",
+										"type": "XML",
+										"async": true,
+										"id": "app"
+									},
+									"dependencies": {
+										"minUI5Version": "1.38",
+										"libs": {
+											"sap.m": {}
+										}
+									},
+									"resources": {
+										"css": [
+											{
+												"uri": "css/style.css"
+											}
+										]
+									}
+								},
+								"sap.card": {
+									"type": "Component",
+									"designtime": "dt/configuration"
+								},
+								"sap.platform.mobilecards": {
+									"compatible": false
+								}
+							},
+							"vizResources": {
+								"artifactId": "wall.CardCarruselCifrasDestacadas"
 							}
 						}
 					}

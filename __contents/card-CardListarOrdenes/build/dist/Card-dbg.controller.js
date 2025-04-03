@@ -42,7 +42,6 @@ sap.ui.define([
 						console.error("Error al obtener el servicio de navegación:", error);
 					}
 				})
-
 		}
 	});
 });

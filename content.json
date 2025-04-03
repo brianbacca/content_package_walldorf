@@ -99,5 +99,13 @@
             "package": "wall-CardConsultasyReclamos.zip",
             "manifest": "./manifest.json"
         }
+    },
+    "card-CardCarruselCifrasDestacadas": {
+        "type": "card",
+        "src": {
+            "from": "./Cards/CardCarruselCifrasDestacadas",
+            "package": "wall-CardCarruselCifrasDestacadas.zip",
+            "manifest": "./manifest.json"
+        }
     }
 }

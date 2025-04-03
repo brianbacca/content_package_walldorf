@@ -1,0 +1,13 @@
+{
+	"_version": "1.27.0",
+	"_generator": "cpkg-project-template",
+	"sap.artifact": {
+		"id": "wall.CardCarruselCifrasDestacadas",
+		"type": "card",
+		"title": "Card Carrusel Cifras Destacadas",
+		"subTitle": "",
+		"artifactVersion": {
+			"version": "1.0.10"
+		}
+	}
+}
